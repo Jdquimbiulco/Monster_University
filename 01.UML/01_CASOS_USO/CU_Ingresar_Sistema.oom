@@ -951,7 +951,7 @@ IndxFKName=%REFR%_FK
 IndxThreshold=
 ColnFKName=%.3:PARENT%_%COLUMN%
 ColnFKNameUse=No</a:ModelOptionsText>
-<a:RepositoryFilename>C:\Users\juand\Documents\Materias\Web\Proyecto\MONSTER_UNIVERSITY_GR4\01.UML\01_CASOS_USO\CU_Ingresar_Sistema.oom</a:RepositoryFilename>
+<a:RepositoryFilename>%[PRJ_ROOT_DIR]%\CU_Ingresar_Sistema.oom</a:RepositoryFilename>
 <c:ObjectLanguage>
 <o:Shortcut Id="o3">
 <a:ObjectID>69EE3EB2-6D66-424A-8BB3-F1F56CA31CC2</a:ObjectID>
@@ -1369,7 +1369,7 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o8">
 <a:CreationDate>1622769712</a:CreationDate>
 <a:ModificationDate>1632929849</a:ModificationDate>
-<a:Rect>((5932,185), (14980,10794))</a:Rect>
+<a:Rect>((5932,185), (14950,10809))</a:Rect>
 <a:ListOfPoints>((6332,9764),(12400,9764),(12400,585))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -1390,8 +1390,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o12">
 <a:CreationDate>1622769714</a:CreationDate>
 <a:ModificationDate>1632929849</a:ModificationDate>
-<a:Rect>((12095,-8544), (19992,-1266))</a:Rect>
-<a:ListOfPoints>((17412,-1666),(17412,-7844),(12495,-7844))</a:ListOfPoints>
+<a:Rect>((12169,-8543), (19962,-1266))</a:Rect>
+<a:ListOfPoints>((17412,-1666),(17412,-7843),(12569,-7843))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1535,7 +1535,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1622769699</a:CreationDate>
 <a:ModificationDate>1632929842</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((1588,-9943), (12846,-4544))</a:Rect>
+<a:Rect>((1509,-9942), (12925,-4543))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:LineWidth>1</a:LineWidth>
 <a:FillColor>16777152</a:FillColor>

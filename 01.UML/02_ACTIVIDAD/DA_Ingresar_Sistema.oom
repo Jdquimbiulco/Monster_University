@@ -951,7 +951,7 @@ IndxFKName=%REFR%_FK
 IndxThreshold=
 ColnFKName=%.3:PARENT%_%COLUMN%
 ColnFKNameUse=No</a:ModelOptionsText>
-<a:RepositoryFilename>C:\Users\juand\Documents\Materias\Web\Proyecto\MONSTER_UNIVERSITY_GR4\01.UML\02_ACTIVIDAD\DA_Ingresar_Sistema.oom</a:RepositoryFilename>
+<a:RepositoryFilename>%[PRJ_ROOT_DIR]%\DA_Ingresar_Sistema.oom</a:RepositoryFilename>
 <c:ObjectLanguage>
 <o:Shortcut Id="o3">
 <a:ObjectID>1001FF8C-FFC2-45B6-8CB7-2BFAD157210A</a:ObjectID>
@@ -1697,8 +1697,8 @@ Shadow=0</a:DisplayPreferences>
 <o:FlowSymbol Id="o24">
 <a:CreationDate>1624586611</a:CreationDate>
 <a:ModificationDate>1624586611</a:ModificationDate>
-<a:Rect>((-21252,7063), (-16691,13413))</a:Rect>
-<a:ListOfPoints>((-20852,13013),(-20852,7688),(-17091,7688))</a:ListOfPoints>
+<a:Rect>((-21252,7063), (-16782,13413))</a:Rect>
+<a:ListOfPoints>((-20852,13013),(-20852,7688),(-17182,7688))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>16711680</a:LineColor>
@@ -1739,8 +1739,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:FlowSymbol Id="o29">
 <a:CreationDate>1624586611</a:CreationDate>
 <a:ModificationDate>1624586611</a:ModificationDate>
-<a:Rect>((-12453,-512), (-2576,2187))</a:Rect>
-<a:ListOfPoints>((-12053,1787),(-12053,113),(-2976,113))</a:ListOfPoints>
+<a:Rect>((-12453,-512), (-2523,2187))</a:Rect>
+<a:ListOfPoints>((-12053,1787),(-12053,113),(-2923,113))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>16711680</a:LineColor>
@@ -1760,8 +1760,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:FlowSymbol Id="o31">
 <a:CreationDate>1624586611</a:CreationDate>
 <a:ModificationDate>1624586611</a:ModificationDate>
-<a:Rect>((9620,-512), (12546,738))</a:Rect>
-<a:ListOfPoints>((10020,113),(12146,113))</a:ListOfPoints>
+<a:Rect>((9567,-512), (12546,738))</a:Rect>
+<a:ListOfPoints>((9967,113),(12146,113))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>16711680</a:LineColor>
@@ -1887,7 +1887,7 @@ DISPNAME 0 Arial,8,N</a:FontList>
 <a:CreationDate>1624586611</a:CreationDate>
 <a:ModificationDate>1624586611</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-17091,6689), (-6917,8688))</a:Rect>
+<a:Rect>((-17182,6689), (-6826,8688))</a:Rect>
 <a:LineColor>33023</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1923,7 +1923,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1624586611</a:CreationDate>
 <a:ModificationDate>1624586611</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-2976,-1886), (10020,2113))</a:Rect>
+<a:Rect>((-2923,-1886), (9967,2113))</a:Rect>
 <a:LineColor>32896</a:LineColor>
 <a:FillColor>12648447</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
