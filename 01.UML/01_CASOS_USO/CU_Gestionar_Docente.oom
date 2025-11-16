@@ -951,7 +951,7 @@ IndxFKName=%REFR%_FK
 IndxThreshold=
 ColnFKName=%.3:PARENT%_%COLUMN%
 ColnFKNameUse=No</a:ModelOptionsText>
-<a:RepositoryFilename>C:\Users\juand\Documents\Materias\Web\Proyecto\MONSTER_UNIVERSITY_GR4\01.UML\01_CASOS_USO\CU_Gestionar_Docente.oom</a:RepositoryFilename>
+<a:RepositoryFilename>%[PRJ_ROOT_DIR]%\CU_Gestionar_Docente.oom</a:RepositoryFilename>
 <c:ObjectLanguage>
 <o:Shortcut Id="o3">
 <a:ObjectID>B8512C7F-310D-4983-B13F-8EF96C125F88</a:ObjectID>
@@ -1390,8 +1390,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o12">
 <a:CreationDate>1622771812</a:CreationDate>
 <a:ModificationDate>1622771812</a:ModificationDate>
-<a:Rect>((-10409,-2248), (-1155,-848))</a:Rect>
-<a:ListOfPoints>((-1555,-1548),(-10009,-1548))</a:ListOfPoints>
+<a:Rect>((-10409,-2247), (-1067,-847))</a:Rect>
+<a:ListOfPoints>((-1467,-1547),(-10009,-1547))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1410,8 +1410,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o15">
 <a:CreationDate>1622771816</a:CreationDate>
 <a:ModificationDate>1622771816</a:ModificationDate>
-<a:Rect>((-100,-11823), (10228,-3740))</a:Rect>
-<a:ListOfPoints>((9828,-10791),(2420,-10791),(2420,-4140))</a:ListOfPoints>
+<a:Rect>((21,-11836), (10090,-3739))</a:Rect>
+<a:ListOfPoints>((9690,-10790),(2420,-10790),(2420,-4139))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1430,8 +1430,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o18">
 <a:CreationDate>1622771820</a:CreationDate>
 <a:ModificationDate>1622771820</a:ModificationDate>
-<a:Rect>((2020,-2138), (14559,-407))</a:Rect>
-<a:ListOfPoints>((14159,-1438),(2420,-1438))</a:ListOfPoints>
+<a:Rect>((2020,-2136), (14559,-391))</a:Rect>
+<a:ListOfPoints>((14159,-1436),(2420,-1436))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1450,8 +1450,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o21">
 <a:CreationDate>1622771822</a:CreationDate>
 <a:ModificationDate>1622771822</a:ModificationDate>
-<a:Rect>((11853,-3377), (16893,3350))</a:Rect>
-<a:ListOfPoints>((14373,-2977),(14373,2950))</a:ListOfPoints>
+<a:Rect>((11977,-3376), (16776,3350))</a:Rect>
+<a:ListOfPoints>((14376,-2976),(14376,2950))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1470,8 +1470,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o24">
 <a:CreationDate>1622771826</a:CreationDate>
 <a:ModificationDate>1622771826</a:ModificationDate>
-<a:Rect>((-1410,-1841), (10577,13797))</a:Rect>
-<a:ListOfPoints>((10177,12797),(1110,12797),(1110,-1441))</a:ListOfPoints>
+<a:Rect>((-1260,-1840), (10645,13843))</a:Rect>
+<a:ListOfPoints>((10245,12797),(1139,12797),(1139,-1440))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1490,8 +1490,8 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o27">
 <a:CreationDate>1622771829</a:CreationDate>
 <a:ModificationDate>1622771833</a:ModificationDate>
-<a:Rect>((1620,-1916), (10519,6653))</a:Rect>
-<a:ListOfPoints>((10119,5649),(4140,5649),(4140,-1516))</a:ListOfPoints>
+<a:Rect>((1703,-1915), (10519,6695))</a:Rect>
+<a:ListOfPoints>((10119,5649),(4102,5649),(4102,-1515))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1570,7 +1570,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1622771701</a:CreationDate>
 <a:ModificationDate>1622771701</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((10177,10098), (18285,15497))</a:Rect>
+<a:Rect>((10245,10098), (18217,15497))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:LineWidth>1</a:LineWidth>
 <a:FillColor>16777152</a:FillColor>
@@ -1589,7 +1589,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1622771701</a:CreationDate>
 <a:ModificationDate>1622771701</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((9673,-5676), (18647,-277))</a:Rect>
+<a:Rect>((9535,-5675), (18785,-276))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:LineWidth>1</a:LineWidth>
 <a:FillColor>16777152</a:FillColor>
@@ -1608,7 +1608,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1622771701</a:CreationDate>
 <a:ModificationDate>1622771701</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((9828,-13491), (18408,-8092))</a:Rect>
+<a:Rect>((9690,-13490), (18546,-8091))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:LineWidth>1</a:LineWidth>
 <a:FillColor>16777152</a:FillColor>
@@ -1627,7 +1627,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1622771701</a:CreationDate>
 <a:ModificationDate>1622771701</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-1555,-4140), (6395,1259))</a:Rect>
+<a:Rect>((-1467,-4139), (6307,1260))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:LineWidth>1</a:LineWidth>
 <a:FillColor>16777152</a:FillColor>
