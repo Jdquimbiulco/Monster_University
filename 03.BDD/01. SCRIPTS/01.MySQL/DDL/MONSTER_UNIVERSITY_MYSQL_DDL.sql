@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     16/11/2025 19:39:07                          */
+/* Created on:     26/11/2025 10:07:36                          */
 /*==============================================================*/
 
 
@@ -221,6 +221,7 @@ create table PEEMP_EMPLE
    PEEMP_CODIGO         varchar(10) not null,
    PESEX_CODIGO         varchar(10) not null,
    PEESC_CODIGO         char(1),
+   PEDEP_CODIGO         varchar(10),
    PEEMP_NOMBRE         varchar(100) not null,
    PEEMP_APELLIDO       varchar(100) not null,
    PEEMP_CORREO         varchar(100) not null,
@@ -342,12 +343,15 @@ alter table XESIS_SISTE comment 'Entidad utilizada para realziar la gestión de l
 create table XEUSU_USUAR
 (
    PEEMP_CODIGO         varchar(10) not null,
-   XEUSU_PASWD          varchar(16) not null,
+   XEUSU_ID_USUARIO     int not null,
    XEEST_CODIGO         char(1) not null,
+   XEUSU_USERNAME       varchar(32) not null,
+   PASSWORDHASH         varchar(255) not null,
+   EMAIL_USUARIO        varchar(128),
+   XEUSU_PIEFIR         varchar(100),
    XEUSU_FECCRE         datetime not null,
-   XEUSU_FECMOD         datetime not null,
-   XEUSU_PIEFIR         varchar(100) not null,
-   primary key (PEEMP_CODIGO, XEUSU_PASWD)
+   XEUSU_FECMOD         datetime,
+   primary key (PEEMP_CODIGO, XEUSU_ID_USUARIO)
 );
 
 alter table XEUSU_USUAR comment 'Entidad relacionada para gentionar los usuario que ingrsan a';
@@ -358,69 +362,69 @@ alter table XEUSU_USUAR comment 'Entidad relacionada para gentionar los usuario 
 create table XEUXP_USUPE
 (
    PEEMP_CODIGO         varchar(10) not null,
-   XEUSU_PASWD          varchar(16) not null,
+   XEUSU_ID_USUARIO     int not null,
    XEPER_CODIGO         char(8) not null,
    XEUXP_FECASI         date not null,
    XEUXP_FECRET         date,
-   primary key (PEEMP_CODIGO, XEUSU_PASWD, XEPER_CODIGO, XEUXP_FECASI)
+   primary key (PEEMP_CODIGO, XEUSU_ID_USUARIO, XEPER_CODIGO, XEUXP_FECASI)
 );
 
 alter table XEUXP_USUPE comment 'Entidad utilizada para realizar el registro de los diferente';
 
 alter table AEASI_ASIGN add constraint FK_ASIGNATURAREQUISITO foreign key (AEA_AEASI_ID)
-      references AEASI_ASIGN (AEASI_ID) on delete restrict on update restrict;
+      references AEASI_ASIGN (AEASI_ID);
 
 alter table AEEST_ESTUD add constraint FK_AR_AECAR_AEEST foreign key (IDCARRERA)
-      references AECAR_CARRER (IDCARRERA) on delete restrict on update restrict;
+      references AECAR_CARRER (IDCARRERA);
 
 alter table AEGRU_GRUPO add constraint FK_ARMAT_MATRI foreign key (IDCARRERA, AEEST_ID)
-      references AEEST_ESTUD (IDCARRERA, AEEST_ID) on delete restrict on update restrict;
+      references AEEST_ESTUD (IDCARRERA, AEEST_ID);
 
 alter table AEGRU_GRUPO add constraint FK_AR_AEASI_AEGRU foreign key (AEASI_ID)
-      references AEASI_ASIGN (AEASI_ID) on delete restrict on update restrict;
+      references AEASI_ASIGN (AEASI_ID);
 
 alter table AEGRU_GRUPO add constraint FK_AR_AEPER_AEGRU foreign key (IDPERIODO)
-      references AEPER_PERIOD (IDPERIODO) on delete restrict on update restrict;
+      references AEPER_PERIOD (IDPERIODO);
 
 alter table AEGRU_GRUPO add constraint FK_AR_PEDOC_AEGRU foreign key (PEDOC_ID)
-      references PEDOC_DOCEN (PEDOC_ID) on delete restrict on update restrict;
+      references PEDOC_DOCEN (PEDOC_ID);
 
 alter table FEDEU_DEUDA add constraint FK_FR_AEEST_FEDEU foreign key (IDCARRERA, AEEST_ID)
-      references AEEST_ESTUD (IDCARRERA, AEEST_ID) on delete restrict on update restrict;
+      references AEEST_ESTUD (IDCARRERA, AEEST_ID);
 
 alter table FEPAG_PAGO add constraint FK_FR_AEEST_FEPAG foreign key (IDCARRERA, AEEST_ID)
-      references AEEST_ESTUD (IDCARRERA, AEEST_ID) on delete restrict on update restrict;
+      references AEEST_ESTUD (IDCARRERA, AEEST_ID);
 
 alter table PEASI_ASIGNACION_ROL add constraint FK_PR_PEAS_PEROL foreign key (PEROL_CODIGO)
-      references PEROL_INSTITUCIONAL (PEROL_CODIGO) on delete restrict on update restrict;
+      references PEROL_INSTITUCIONAL (PEROL_CODIGO);
 
 alter table PEEMP_EMPLE add constraint FK_PR_PEESC_PEEMP foreign key (PEESC_CODIGO)
-      references PEESC_ESTCIV (PEESC_CODIGO) on delete restrict on update restrict;
+      references PEESC_ESTCIV (PEESC_CODIGO);
 
 alter table PEEMP_EMPLE add constraint FK_PR_PESEX_PEEMP foreign key (PESEX_CODIGO)
-      references PESEX_SEXO (PESEX_CODIGO) on delete restrict on update restrict;
+      references PESEX_SEXO (PESEX_CODIGO);
 
 alter table PEROL_INSTITUCIONAL add constraint FK_PR_PEROL_PEEMP foreign key (PEEMP_CODIGO)
-      references PEEMP_EMPLE (PEEMP_CODIGO) on delete restrict on update restrict;
+      references PEEMP_EMPLE (PEEMP_CODIGO);
 
 alter table XEOPC_OPCIO add constraint FK_XR_XESIS_XEOPC foreign key (XESIS_CODIGO)
-      references XESIS_SISTE (XESIS_CODIGO) on delete restrict on update restrict;
+      references XESIS_SISTE (XESIS_CODIGO);
 
 alter table XEOXP_OPCPE add constraint FK_XR_XEOPC_XEOXP foreign key (XEOPC_CODIGO)
-      references XEOPC_OPCIO (XEOPC_CODIGO) on delete restrict on update restrict;
+      references XEOPC_OPCIO (XEOPC_CODIGO);
 
 alter table XEOXP_OPCPE add constraint FK_XR_XEPER_XEOXP foreign key (XEPER_CODIGO)
-      references XEPER_PERFI (XEPER_CODIGO) on delete restrict on update restrict;
+      references XEPER_PERFI (XEPER_CODIGO);
 
 alter table XEUSU_USUAR add constraint FK_XR_PEEMP_XEUSU foreign key (PEEMP_CODIGO)
-      references PEEMP_EMPLE (PEEMP_CODIGO) on delete restrict on update restrict;
+      references PEEMP_EMPLE (PEEMP_CODIGO);
 
 alter table XEUSU_USUAR add constraint FK_XR_XEEST_XEUSU foreign key (XEEST_CODIGO)
-      references XEEST_ESTAD (XEEST_CODIGO) on delete restrict on update restrict;
+      references XEEST_ESTAD (XEEST_CODIGO);
 
 alter table XEUXP_USUPE add constraint FK_XR_XEPER_XEUXP foreign key (XEPER_CODIGO)
-      references XEPER_PERFI (XEPER_CODIGO) on delete restrict on update restrict;
+      references XEPER_PERFI (XEPER_CODIGO);
 
-alter table XEUXP_USUPE add constraint FK_XR_XEUSU_XEUXP foreign key (PEEMP_CODIGO, XEUSU_PASWD)
-      references XEUSU_USUAR (PEEMP_CODIGO, XEUSU_PASWD) on delete restrict on update restrict;
+alter table XEUXP_USUPE add constraint FK_XR_XEUSU_XEUXP foreign key (PEEMP_CODIGO, XEUSU_ID_USUARIO)
+      references XEUSU_USUAR (PEEMP_CODIGO, XEUSU_ID_USUARIO);
 

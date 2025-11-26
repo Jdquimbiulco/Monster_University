@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2016                    */
-/* Created on:     19/11/2025 07:47:56                          */
+/* Created on:     26/11/2025 10:09:32                          */
 /*==============================================================*/
 
 
@@ -1189,12 +1189,15 @@ go
 /*==============================================================*/
 create table XEUSU_USUAR (
    PEEMP_CODIGO         varchar(10)          not null,
-   XEUSU_PASWD          varchar(16)          not null,
+   XEUSU_ID_USUARIO     int                  not null,
    XEEST_CODIGO         char(1)              not null,
+   XEUSU_USERNAME       varchar(32)          not null,
+   PASSWORDHASH         varchar(255)         not null,
+   EMAIL_USUARIO        varchar(128)         null,
+   XEUSU_PIEFIR         varchar(100)         null,
    XEUSU_FECCRE         datetime             not null,
-   XEUSU_FECMOD         datetime             not null,
-   XEUSU_PIEFIR         varchar(100)         not null,
-   constraint PK_XEUSU_USUAR primary key (PEEMP_CODIGO, XEUSU_PASWD)
+   XEUSU_FECMOD         datetime             null,
+   constraint PK_XEUSU_USUAR primary key (PEEMP_CODIGO, XEUSU_ID_USUARIO)
 )
 go
 
@@ -1241,10 +1244,10 @@ go
 create table XEUXP_USUPE (
    XEPER_CODIGO         char(8)              not null,
    PEEMP_CODIGO         varchar(10)          not null,
-   XEUSU_PASWD          varchar(16)          not null,
+   XEUSU_ID_USUARIO     int                  not null,
    XEUXP_FECASI         datetime             not null,
    XEUXP_FECRET         datetime             null,
-   constraint PK_XEUXP_USUPE primary key (XEPER_CODIGO, PEEMP_CODIGO, XEUSU_PASWD, XEUXP_FECASI)
+   constraint PK_XEUXP_USUPE primary key (XEPER_CODIGO, PEEMP_CODIGO, XEUSU_ID_USUARIO, XEUXP_FECASI)
 )
 go
 
@@ -1283,7 +1286,7 @@ go
 
 
 create nonclustered index XR_XEUSU_XEUXP_FK on XEUXP_USUPE (PEEMP_CODIGO ASC,
-  XEUSU_PASWD ASC)
+  XEUSU_ID_USUARIO ASC)
 go
 
 alter table AEASI_ASIGN
@@ -1377,7 +1380,7 @@ alter table XEUXP_USUPE
 go
 
 alter table XEUXP_USUPE
-   add constraint FK_XEUXP_US_XR_XEUSU__XEUSU_US foreign key (PEEMP_CODIGO, XEUSU_PASWD)
-      references XEUSU_USUAR (PEEMP_CODIGO, XEUSU_PASWD)
+   add constraint FK_XEUXP_US_XR_XEUSU__XEUSU_US foreign key (PEEMP_CODIGO, XEUSU_ID_USUARIO)
+      references XEUSU_USUAR (PEEMP_CODIGO, XEUSU_ID_USUARIO)
 go
 
